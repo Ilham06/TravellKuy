@@ -15,32 +15,21 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav>
       <div class="container">
-          <a class="navbar-brand" href="#">LiburanKuy</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Destination</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">foods</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Event</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Location</a>
-              </li>
-            </ul>
-          </div>
-      </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">DesignX</label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        </div>
     </nav>
 
     <section class="home" id="home">
@@ -52,9 +41,34 @@
             </div>
         </div>
     </section>
-
+    <section class="stats">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-sm-8 stats-box">
+          <div class="row justify-content-around">
+            <div class="col-3 stats-detail">
+              <h2>15</h2>
+              <p>Awards</p>
+            </div>
+            <div class="col-3 stats-detail">
+              <h2>10</h2>
+              <p>Patners</p>
+            </div>
+            <div class="col-3 stats-detail">
+              <h2>314</h2>
+              <p>Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="services">
         <div class="container">
+          <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h3 class="header-tag">why choose me?</h3>
+                    <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
             <div class="row mb-5">
                 <div class="col-lg-4">
                     <div class="card services-card text-center">
@@ -175,73 +189,99 @@
         </div>
     </section>
 
-    <section class="testimonials">
-	<div class="container">
-	  <div class="row justify-content-center text-center mb-2">
+    <section class="gallery">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8">
-                    <h3 class="header-tag">what about my client say?</h3>
+                    <h3 class="header-tag">Travelling Gallery</h3>
                     <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="customers-testimonials" class="owl-carousel">
-            <div class="item">
-              <div class="testimonial-card">
-                <img src="Asset/Image/testi/1.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. </p>
-                <hr>
-                <div class="testimonial-id">
-	              <h4>Loriana Dewi</h4>
-	              <p>Malang, East Java</p>
-	            </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial-card">
-                <img src="Asset/Image/testi/2.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. </p>
-                <hr>
-                <div class="testimonial-id">
-	              <h4>Ilham Muhamad</h4>
-	              <p>Bandung, West Java</p>
-	            </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial-card">
-                <img src="Asset/Image/testi/3.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. </p>
-                <hr>
-                <div class="testimonial-id">
-	              <h4>Reynaldi</h4>
-	              <p>Bogor, West Java</p>
-	            </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial-card">
-                <img src="Asset/Image/testi/4.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. </p>
-                <hr>
-                <div class="testimonial-id">
-	              <h4>Andine Putri</h4>
-	              <p>Surabaya, East Java</p>
-	            </div>
-              </div>
-            </div>
+        <div class="row gallery-box">
+          <div class="column">
+            <img src="Asset/Image/gallary/1.jpg" />
+            <img src="Asset/Image/gallary/2.jpg" />
             
+          </div>
+          <div class="column">
+            <img src="Asset/Image/gallary/4.jpg" />
+            <img src="Asset/Image/gallary/5.jpg" />
+            
+          </div>
+          <div class="column">
+            <img src="Asset/Image/gallary/7.jpg" />
+            <img src="Asset/Image/gallary/8.jpg" />
             
           </div>
         </div>
       </div>
+    </section>
+
+
+    <section class="testimonials">
+    	<div class="container">
+    	  <div class="row justify-content-center text-center mb-2">
+                    <div class="col-lg-8">
+                        <h3 class="header-tag">what about my client say?</h3>
+                        <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+        </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="customers-testimonials" class="owl-carousel">
+                <div class="item">
+                  <div class="testimonial-card">
+                    <img src="Asset/Image/testi/1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <hr>
+                    <div class="testimonial-id">
+    	              <h4>Loriana Dewi</h4>
+    	              <p>Malang, East Java</p>
+    	            </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="testimonial-card">
+                    <img src="Asset/Image/testi/2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <hr>
+                    <div class="testimonial-id">
+    	              <h4>Ilham Muhamad</h4>
+    	              <p>Bandung, West Java</p>
+    	            </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="testimonial-card">
+                    <img src="Asset/Image/testi/3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <hr>
+                    <div class="testimonial-id">
+    	              <h4>Reynaldi</h4>
+    	              <p>Bogor, West Java</p>
+    	            </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="testimonial-card">
+                    <img src="Asset/Image/testi/4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <hr>
+                    <div class="testimonial-id">
+    	              <h4>Andine Putri</h4>
+    	              <p>Surabaya, East Java</p>
+    	            </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
       </div>
     </section>
-    <!-- END OF TESTIMONIALS -->
 
     <footer class="section-footer mt-5 mb-4 border-top">
       <div class="container pt-5 pb-5">
@@ -313,8 +353,9 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
     <script src="Asset/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
