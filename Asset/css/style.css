@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -13,44 +17,49 @@ li {
 	list-style: none;
 }
 
+label {
+	margin: 0;
+	padding: 0;
+}
+
 /*nav*/
 nav{
-  background: #0082e6;
-  height: 80px;
-  width: 100vw;
+  padding-top: 30px;
+  height: 60px;
+  width: 100%;
   position: fixed;
   z-index: 999;
+  transition: .5s;
 }
 
 .logo{
   color: white;
   font-size: 35px;
-  line-height: 80px;
   font-weight: bold;
 }
 
 nav ul{
-  float: right;
-  margin-right: 20px;
+  margin-bottom: 0;
 }
 
 nav ul li{
   display: inline-block;
-  line-height: 80px;
   margin: 0 5px;
 }
 
 nav ul li a{
   color: white;
-  font-size: 17px;
+  font-size: 14px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 
 a.active,a:hover{
-  background: #1b9bff;
+  background: #118FF1;
   transition: .5s;
+  text-decoration: none;
+  color: #fff;
 }
 
 .checkbtn{
@@ -67,13 +76,24 @@ a.active,a:hover{
   display: none;
 }
 
+nav.navAnimate {
+	padding-top: 0;
+	height: 60px;
+	padding: auto;
+	background-color: #1b9bff;
+	transition: .5s;
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	border-bottom: 1px solid #fff;
+}
+
 
 
 /*header*/
 
 .header-tag {
-	font-size: 32px;
-	color: #222;
+	font-size: 36px;
+	font-weight: bold;
+	color: #444;
 	text-transform: capitalize;
 }
 
@@ -87,8 +107,8 @@ a.active,a:hover{
 	background-image: url(../Image/main_banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 800px;
 	/*margin-top: -56px;*/
 }
 
@@ -123,18 +143,19 @@ a.active,a:hover{
 
 .stats-box h2 {
 	font-size: 30px;
+	color: #444;
 }
 
 .stats-box p {
 	font-size: 20px;
 	font-weight: lighter;
+	color: #999;
 }
 
 
 /*services*/
 .services {
 	margin-top: 100px;
-	margin-bottom: 100px;
 	
 }
 
@@ -160,6 +181,10 @@ a.active,a:hover{
 }
 
 /*destination*/
+.destination {
+	padding: 50px 0;
+	background-color: #f4f4f4;
+}
 
 .destination-card {
 	margin-bottom: 20px;
@@ -186,7 +211,7 @@ a.active,a:hover{
 
 /*gallery*/
 .gallery {
-	margin-top: 100px;
+	margin: 50px 0;
 }
 
 .gallery-box {
@@ -218,7 +243,9 @@ a.active,a:hover{
 /*testi*/
 
 .testimonials {
+	background-color: #f4f4f4;
 	margin-top: 100px;
+	padding-top: 50px;
 }
 
 .testimonial-card {
@@ -298,6 +325,23 @@ a.active,a:hover{
 	width: 20px;
 }
 
+/*footer*/
+.footer p {
+	line-height: 32px;
+}
+
+.footer ul li {
+	margin: 7px 0;
+}
+
+.link,.contact {
+	padding-left: 80px; 
+}
+
+.copyright {
+	background-color: #f4f4f4;
+}
+
 /*responsive*/
 @media (max-width: 952px){
   .logo{
@@ -309,16 +353,20 @@ a.active,a:hover{
 }
 
 @media (max-width: 858px){
+   nav .container {
+   	align-items: center;
+   }
+
   .checkbtn{
     display: block;
   }
 
-  ul{
+  nav ul{
     position: fixed;
     width: 100%;
     height: 100vh;
     background: #2c3e50;
-    top: 80px;
+    top: 60px;
     left: -100%;
     text-align: center;
     transition: all .5s;
