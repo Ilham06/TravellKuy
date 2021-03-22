@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Asset/css/style.css">
-    <title>Hello, world!</title>
+    <title>TravellKuy</title>
   </head>
   <body>
     <nav class="d-flex align-items-center">
@@ -21,12 +21,12 @@
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">JalanKuy</label>
+        <label class="logo">TravellKuy</label>
         <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Destination</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="#">Account</a></li>
         </ul>
         </div>
@@ -36,36 +36,45 @@
         <div class="container">
             <div class="home-desc">
                 <h2>Find the Hidden <br>Paradise here!.</h2>
-                <p>amazing places, amazing moment.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="#" class="btn btn-primary">explore more</a>
             </div>
         </div>
     </section>
     <section class="stats">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 col-sm-8 stats-box">
+      <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-lg-8 stats-box">
           <div class="row justify-content-around">
-            <div class="col-3 stats-detail">
-              <h2>15</h2>
-              <p>Awards</p>
+            <div class="col">
+              <div class="stats-detail text-center">
+                <h2>15</h2>
+                <p>Awards</p>
+              </div>
             </div>
-            <div class="col-3 stats-detail">
-              <h2>10</h2>
-              <p>Patners</p>
+            <div class="col">
+              <div class="stats-detail text-center">
+                <h2>10</h2>
+                <p>Patners</p>
+              </div>
             </div>
-            <div class="col-3 stats-detail">
-              <h2>314</h2>
-              <p>Clients</p>
+            <div class="col">
+              <div class="stats-detail text-center">
+                <h2>314</h2>
+                <p>Clients</p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <section class="services">
         <div class="container">
           <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8">
-                    <h3 class="header-tag">why choose me?</h3>
+                    <h3 class="header-tag">why <span>choose</span> me?</h3>
                     <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -73,7 +82,7 @@
                 <div class="col-lg-4">
                     <div class="card services-card text-center">
                     	<div class="services-img">
-                    		<img src="Asset/Image/services/travel.jpg">
+                    		<img src="Asset/Image/services/travel.png">
                     	</div>
                         <h4 class="mb-3">Full Travel Package</h4>
                         
@@ -95,9 +104,9 @@
                 <div class="col-lg-4">
                     <div class="card services-card text-center">
                     	<div class="services-img">
-                    		<img src="Asset/Image/services/money.jpg">
+                    		<img src="Asset/Image/services/money.png">
                     	</div>
-                        <h4 class="mb-3">Affordable Price</h4>
+                        <h4 class="mb-3">Best Price</h4>
                         
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -107,11 +116,11 @@
         </div>
     </section>
 
-    <section class="destination">
+    <section class="destination" id="destination">
         <div class="container">
             <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8">
-                    <h3 class="header-tag">favorite destination</h3>
+                    <h3 class="header-tag">favorite <span>destination</span></h3>
                     <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -189,11 +198,11 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8">
-                    <h3 class="header-tag">Travelling Gallery</h3>
+                    <h3 class="header-tag">Travelling <span>Gallery</span></h3>
                     <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
@@ -221,10 +230,10 @@
     <section class="testimonials">
     	<div class="container">
     	  <div class="row justify-content-center text-center mb-2">
-                    <div class="col-lg-8">
-                        <h3 class="header-tag">what about my client say?</h3>
-                        <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+            <div class="col-lg-8">
+                <h3 class="header-tag">what about <span>my client</span> say?</h3>
+                <p class="header-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
         </div>
           <div class="row">
             <div class="col-sm-12">
@@ -283,6 +292,23 @@
       </div>
     </section>
 
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-desc text-center">
+            <h2>Get 50% Price for first Travel!</h2>
+            <p>Sumbit your email for special offer</p>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div>
+              <button type="button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer border-top">
       <div class="container pt-5 pb-5">
         <div class="row justify-content-center">
@@ -290,15 +316,15 @@
             <div class="row">
               <div class="col-12">
                 <div class="row">
-                  <div class="col-12 col-lg-4">
+                  <div class="col-12 col-lg-4 mb-4">
                     <h5 class="mb-4">JalanKuy</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation.</p>
                   </div>
-                  <div class="col-12 col-lg-4 link">
+                  <div class="col-12 col-lg-4 mb-4">
                     <h5 class="mb-4">Usefull Link</h5>
-                    <ul class="list-unstyled">
+                    <ul class="link">
                       <li><a href="#">Register</a></li>
                       <li><a href="#">Login</a></li>
                       <li><a href="#">Account</a></li>
@@ -307,9 +333,9 @@
                       <li><a href="#">Contact</a></li>
                     </ul>
                   </div>
-                  <div class="col-12 col-lg-4 contact">
+                  <div class="col-12 col-lg-4">
                     <h5 class="mb-4">Contact Info</h5>
-                    <ul class="list-unstyled">
+                    <ul>
                       <li>Bandung, West Java</li>
                       <li>Indonesia</li>
                       <li>0822 - 2347 - 5472</li>
@@ -325,7 +351,7 @@
       <div class="container-fluid copyright">
         <div class="row border-top justify-content-center align-items-center pt-4 pb-4">
           <div class="col-auto text-gray-500 font-weight-light">
-            2021 Copyright JalanKuy Travel • All rights reserved
+            2021 Copyright JalanKuy Travel
           </div>
         </div>
       </div>
